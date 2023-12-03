@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de la Recherche Inversée</title>
+</head>
+
+<body>
+    <h1>Résultats de la Recherche Inversée</h1>
+    {% if result %}
+        <p>Nom : {{ result[0] }}</p>
+        <p>Adresse : {{ result[1] }}</p>
+        <!-- Ajoutez d'autres champs d'information selon votre schéma de base de données -->
+    {% else %}
+        <p>Aucun résultat trouvé pour ce numéro de téléphone.</p>
+    {% endif %}
+</body>
+
+</html>
